@@ -2,19 +2,33 @@
 
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.0'
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.2'
+        classpath 'com.android.tools.build:gradle:2.3.1'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     }
 }
 
 allprojects {
     repositories {
+        jcenter()
         mavenCentral()
         maven {
             url "https://jitpack.io"
         }
     }
+}
+
+ext {
+    // Sdk version
+    minSdkVersion = 15
+    targetSdkVersion = 22
+    compileSdkVersion = 25
+    buildToolsVersion = "25.0.2"
+
+    // App dependencies
+    supportLibraryVersion = "25.3.1"
+    junitVersion = "4.12"
+
 }

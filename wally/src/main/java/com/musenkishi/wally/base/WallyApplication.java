@@ -22,7 +22,6 @@ import android.graphics.Bitmap;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.model.GlideUrl;
-import com.crashlytics.android.Crashlytics;
 import com.musenkishi.wally.BuildConfig;
 import com.musenkishi.wally.dataprovider.DataProvider;
 import com.musenkishi.wally.dataprovider.SharedPreferencesDataProvider;
@@ -130,7 +129,7 @@ public class WallyApplication extends Application {
 
     public static void startCrashlytics(Context context) {
         if (!BuildConfig.DEBUG){
-            Crashlytics.start(context);
+            //Crashlytics.start(context);
         }
     }
 
@@ -145,7 +144,7 @@ public class WallyApplication extends Application {
                             SharedPreferencesDataProvider.CRASH_LOGGING_APPROVED) {
                         String message = "Class: " + fromClass.getName() + ", reason: " + reason +
                                 ", exceptionMessage: " + exceptionMessage;
-                        Crashlytics.log(message);
+                        //Crashlytics.log(message);
                     }
                 }
             });

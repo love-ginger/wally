@@ -70,7 +70,10 @@
             <meta-data android:name="color" android:value="@color/Actionbar.TopList.Background" />
         </service>
 
+
+        <!--
         <meta-data android:name="com.crashlytics.ApiKey" android:value="d3189238d25ebe70dbcc55f7fd986c39c4270ac9"/>
+        -->
     </application>
 
 </manifest>

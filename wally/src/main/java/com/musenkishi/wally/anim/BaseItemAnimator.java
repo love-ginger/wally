@@ -19,6 +19,7 @@ package com.musenkishi.wally.anim;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPropertyAnimatorListener;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SimpleItemAnimator;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -30,7 +31,7 @@ import java.util.ArrayList;
  *
  * @see android.support.v7.widget.RecyclerView#setItemAnimator(android.support.v7.widget.RecyclerView.ItemAnimator)
  */
-public abstract class BaseItemAnimator extends RecyclerView.ItemAnimator {
+public abstract class BaseItemAnimator extends SimpleItemAnimator {
 
     /**
      * RecyclerView
